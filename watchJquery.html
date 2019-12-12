@@ -1,0 +1,40 @@
+<!--
+ * @Author: your name
+ * @Date: 2019-12-12 21:55:45
+ * @LastEditTime: 2019-12-12 22:23:08
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \jqueryDemo\watchJquery.html
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        see source 
+    </title>
+</head>
+<body>
+    <div>
+        <ol>
+            <li>tiger</li>
+            <li>panda</li>
+            <li>snake</li>
+        </ol>
+    </div>
+    <script src="jquery2.2.4.js"> </script>
+    <script>
+        $(function(){
+            $("li:eq(2)").click(function(params) {
+                if (this.innerText == 'drag') { 
+                    this.innerText = 'snake';               
+                }else{
+                    this.innerText = 'drag';
+                }
+            })
+        });
+    </script>
+</body>
+</html>
